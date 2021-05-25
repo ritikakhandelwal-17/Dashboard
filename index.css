@@ -179,7 +179,8 @@ th{
     height: 295px;
 }
 #task{
-    width: 26vw;
+    width: 350px;
+    height: 300px;
     text-align: center;
     padding: 3px;
     overflow: auto;
