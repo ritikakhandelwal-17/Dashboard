@@ -35,3 +35,4 @@ src="https://cdn.tutorialjinni.com/progressbar.js/1.1.0/progressbar.js">
 
 9. My Courses:  Section containing information about all courses with scrolling and color of changes as pointer is on the element.
 
+To run it on your System clone the repository on your system.
