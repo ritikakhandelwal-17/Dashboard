@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X<-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <div id="navi">
+        <nav>
+            <li > 
+                <ul class="nav_list" style="margin-top: 20px;" onmouseover="func(this , 'white')"  
+                onmouseout="func2(this , 'lightgray')">Home</ul>
+                <ul class="nav_list" onmouseover="func(this , 'white')" 
+                 onmouseout="func2(this , 'lightgray')">My Course</ul>
+                <ul class="nav_list" onmouseover="func(this , 'white')"  
+                onmouseout="func2(this , 'lightgray')">Bookmarks</ul>
+                <ul class="nav_list" onmouseover="func(this , 'white')"  
+                onmouseout="func2(this , 'lightgray')">Tutors</ul>
+                <ul class="nav_list" onmouseover="func(this , 'white')"
+                onmouseout="func2(this , 'lightgray')">Practice Papers</ul>
+                <ul class="nav_list"onmouseover="func(this , 'white')"  
+                onmouseout="func2(this , 'lightgray')">Setting</ul>
+                <ul class="nav_list" onmouseover="func(this , 'white')" 
+                 onmouseout="func2(this , 'lightgray')">Contact Us</ul>
+                <ul class="nav_list" onmouseover="func(this , 'white')" 
+                 onmouseout="func2(this , 'lightgray')">Tests</ul>
+            </li>
+        </nav>
+    </div>
+
+    <div id="cont1">
+    <div id="cham">
+
+    <div id="greet"><h2>Hii Champion!!</h2></div>
+    <p id="upl">Upcoming Lessons</p>
+
+    <div id="upcoming_lessons">
+        
+        <li id="lesson_list">
+            <ul class="lesson" onmouseover="func(this , 'rgb(36, 147, 216)')"
+              onmouseout="func2(this , 'rgb(245, 207, 242)')">
+                <div class="date"><h4>12 JUNE</h4>2:30pm</div>
+                <div class="subject">Physics</div>
+            </ul>
+            <ul class="lesson" onmouseover="func(this , 'rgb(36, 147, 216)')"
+            onmouseout="func2(this , 'rgb(245, 207, 242)')">
+                <div class="date"><h4>12 JUNE</h4>4:30pm</div>
+                <div class="subject">English</div>
+            </ul>
+            <ul class="lesson" onmouseover="func(this , 'rgb(36, 147, 216)')"
+            onmouseout="func2(this , 'rgb(245, 207, 242)')">
+                <div class="date"><h4>13 JUNE</h4>9:00am</div>
+                <div class="subject">Maths</div>
+            </ul>
+            <ul class="lesson" onmouseover="func(this , 'rgb(36, 147, 216)')"
+            onmouseout="func2(this , 'rgb(245, 207, 242)')">
+                <div class="date"><h4>13 JUNE</h4>11:00am</div>
+                <div class="subject">French</div>
+            </ul>
+        </li>
+    </div>
+    </div>
+    <div id="leaderboard"><h2 style="color: midnightblue; text-align: left; margin-bottom: 9px;">
+        Leaderboard</h2>
+        <div id="rank">
+        <table id="lead_t">
+            
+            <tr id="top" class="row">
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Best Score</th>
+                <th>Total Score</th>
+            </tr>
+            
+            <tr class="row">
+                <td>1</td>
+                <td>Mehak Jain</td>
+                <td>60</td>
+                <td>5000</td>
+            </tr>
+            <tr class="row">
+                <td>2</td>
+                <td>Rohit</td>
+                <td>75</td>
+                <td>4900</td>
+            </tr>
+            <tr class="row">
+                <td>3</td>
+                <td>Richa Jain</td>
+                <td>75</td>
+                <td>4888</td>
+            </tr>
+            <tr class="row">
+                <td>4</td>
+                <td>Peter Goel</td>
+                <td>62</td>
+                <td>4822</td>
+            </tr>
+            <tr class="row">
+                <td>5</td>
+                <td>Preerit Kumar</td>
+                <td>75</td>
+                <td>4777</td>
+            </tr>
+            <tr class="row">
+                <td>6</td>
+                <td>Naman</td>
+                <td>35</td>
+                <td>4555</td>
+            </tr>
+            <tr class="row">
+                <td>7</td>
+                <td>Mehak Jain</td>
+                <td>75</td>
+                <td>4900</td>
+            </tr>
+            <tr class="row">
+                <td>8</td>
+                <td>Mohit Jain</td>
+                <td>75</td>
+                <td>4300</td>
+            </tr>
+            <tr class="row">
+                <td>9</td>
+                <td>Mehak Mehta</td>
+                <td>75</td>
+                <td>4200</td>
+            </tr>
+            <tr class="row">
+                <td>10</td>
+                <td>Mehul Jain</td>
+                <td>75</td>
+                <td>4500</td>
+            </tr>
+            <tr class="row">
+                <td>11</td>
+                <td>Parul Gupta</td>
+                <td>25</td>
+                <td>3000</td>
+            </tr>
+            
+        </table>
+    </div>
+    </div>
+    <div id="pieAnalysis">
+        <div id="ap1">
+        <h2 style="color: midnightblue; text-align: left; margin-bottom: 16px;">
+        Subjectwise Study Time</h2>
+        <canvas id="pieChart" style="max-width: 300px; max-height: 260px;"></canvas>
+        </div>
+    </div>
+    
+    <div id="analysis">
+        <div id="a1">
+        <h2 style="color: midnightblue; text-align: left; margin-bottom: 16px;">
+            Analyse Your Study Time!!</h2>
+        <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <div id="homework">
+        <div id="hw_list">
+            <h2 style="color: midnightblue; text-align: left; margin-bottom: 9px;">
+                Homework Progress</h2>
+            <li>
+                <ul id="hw1" class="hw"  onmouseover="func(this , 'pink')"
+                onmouseout="func2(this , 'rgb(219, 247, 208)')">
+                    <div class="progress" id="p1"></div>
+                    <div class="content"><h3>Basic Maths</h3>
+                        <p style="color: gray; text-align: left;">~Mr. Bhanu Singh</p></div>
+                </ul>
+                <ul id="hw2" class="hw"  onmouseover="func(this , 'pink')"
+                onmouseout="func2(this , 'rgb(219, 247, 208)')">
+                    <div class="progress" id="p2"></div>
+                    <div class="content"><h3>Chemistry</h3>
+                        <p style="color: gray; text-align: left;">~Mrs. Diya Kumari</p></div>
+                </ul>
+                <ul id="hw3" class="hw"  onmouseover="func(this , 'pink')"
+                onmouseout="func2(this , 'rgb(219, 247, 208)')">
+                    <div class="progress" id="p3"></div>
+                    <div class="content"><h3>Spoken English</h3>
+                        <p style="color: gray; text-align: left;">~Ms. Stuti Sharma</p>
+                    
+                    </div>
+                </ul>
+            </li>
+        </div>
+    </div>
+
+    <div id="timetable"><h2 style="color: midnightblue; margin-bottom: 9px;">
+        Time Table</h2>
+
+        <div id="upcoming_class">
+        
+            <li id="class_list">
+                <ul class="day" onmouseover="func(this , 'rgb(215, 39, 170)')"
+                onmouseout="func2(this , 'rgb(192, 210, 243)')">
+                    <div class="time"><h4>TODAY</h4></div>
+                    <div class="subject">3 classes</div>
+                </ul>
+                <ul class="day" onmouseover="func(this , 'rgb(215, 39, 170)')"
+                onmouseout="func2(this , 'rgb(192, 210, 243)')">
+                    <div class="time"><h4>TOMORROW</h4></div>
+                    <div class="subject">3 classes</div>
+                </ul>
+                <ul class="day"onmouseover="func(this , 'rgb(215, 39, 170)')"
+                onmouseout="func2(this , 'rgb(192, 210, 243)')">
+                    <div class="time"><h4>DAY AFTER TOMORROW</h4></div>
+                    <div class="subject">4 classes</div>
+                </ul>
+            </li>
+        </div>
+
+    </div>
+    <div id="task">
+        <li id="task_list">
+            <h2 style="color: midnightblue; text-align: left; margin: 9px; padding: 9px;">
+                Tasks</h2>
+            <ul class="tl">
+                <h4>Complete notes of Physiscs Chapter 3</h4>
+                <p>Due Time: 27/6/2021 at 11:59pm</p>
+                <p style="text-align: left;">~Mrs.Helen</p>
+
+            </ul>
+
+            <ul class="tl">
+                <h4>Complete long answers of History Chapter 9</h4>
+                <p>Due Time: 29/6/2021 at 11:59pm</p>
+                <p style="text-align: left;">~Mr.Mohit Jain</p>
+            </ul>
+            <button id="btn">See All Tasks</button>
+
+        </li>
+        
+    </div>
+    
+   
+    
+    
+    <div id="mycourse">
+        <li id="course_list">
+            <h2 style="color: midnightblue; text-align: left; margin-bottom: 15px;">
+                My Courses</h2>
+            <ul class="course" onmouseover="func(this , 'rgb(255, 255, 87)')"
+            onmouseout="func2(this , 'rgb(235, 235, 235)')">
+                <h3>Calligraphy</h3>
+                <p>~Mrs.Suman Gautam</p>
+                <p class="perc">65%</p>
+                <progress value = "65" max = "100"></progress>
+            </ul>
+            <ul class="course" onmouseover="func(this , 'rgb(255, 255, 87)')"
+            onmouseout="func2(this , 'rgb(235, 235, 235)')"><h3>Hip-Hop Dance</h3>
+                <p>~Mrs.Meena Gupta</p>
+                <p class="perc">25%</p>
+                <progress value = "25" max = "100"></progress>
+            </ul>
+            <ul class="course" onmouseover="func(this , 'rgb(255, 255, 87)')"
+            onmouseout="func2(this , 'rgb(235, 235, 235)')"><h3>French Speaking</h3>
+                <p>~Mr.Rohan Jain</p>          
+                <p class="perc">52%</p>
+                <progress value = "52" max = "100"></progress>  
+            </ul>
+        </li>
+    </div>
+    
+    </div>
+
+    
+</body>
+<script
+src="https://cdn.tutorialjinni.com/progressbar.js/1.1.0/progressbar.js">
+</script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<script
+src="index.js">
+</script>
+
+</html>
