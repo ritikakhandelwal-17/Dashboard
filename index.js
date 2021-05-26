@@ -105,18 +105,11 @@ var bar = new ProgressBar.Circle('#p3', {
 bar.animate(0.22);
 bar.text.style.color = 'black';
 
-
-
-
-
-
 function func2(id , color)
 {
   id.style.backgroundColor=color;
   
 }
-
-
 function func(id , color)
 {
   id.style.backgroundColor=color;
