@@ -5,6 +5,8 @@ It is a Dashbord showing progess and study analysis of a student
 
 The data is hardcoded as of now for further usage data from APIs can be used.
 
+Top division contain profile and name of candidate (having color changing feature), further other items like name and logo of website can be added.
+
 It has following Sections
 
 1.Navigation Bar: Vertical navigation bar in left having various options also when mouse is over any element the background color of element changes.
@@ -31,8 +33,10 @@ src="https://cdn.tutorialjinni.com/progressbar.js/1.1.0/progressbar.js">
 
 7.Timetable:  Section containing information about classes in upcoming days with scrolling and color of changes as pointer is on the element.
 
-8. Task:  Section containing information about task to complete all tasks button at end.
+8. Task:  Section containing information about task to complete all tasks button at end , scrolling effect and color change as pointer hover upon it.
 
 9. My Courses:  Section containing information about all courses with scrolling and color of changes as pointer is on the element.
+
+To include color changing effect two functions were made in javascript which chages color on mouseover and restore prevous color on mouse out.
 
 To run it on your System clone the repository on your system.

@@ -8,7 +8,14 @@
     <title>Dashboard</title>
 </head>
 <body>
+    <div id="header" >
+        <div id="profile"  onmouseover="func(this , 'rgb(241, 240, 138)')"  
+        onmouseout="func2(this , 'rgb(161, 202, 216)')">
+            <div style="margin: 15px; color: black;"><h2>Rachel Singh</h2></div>
+            <img src='profile.png' width="40" height="50">
+        </div>
     
+</div>
     <div id="navi">
         <nav>
             <li > 
@@ -216,24 +223,29 @@
 
     </div>
     <div id="task">
-        <li id="task_list">
+        <div id="task_list">
+        <li >
             <h2 style="color: midnightblue; text-align: left; margin: 9px; padding: 9px;">
                 Tasks</h2>
-            <ul class="tl">
+            <ul class="tl" onmouseover="func(this , 'pink')"
+            onmouseout="func2(this , 'rgb(238, 162, 108)')">
                 <h4>Complete notes of Physiscs Chapter 3</h4>
                 <p>Due Time: 27/6/2021 at 11:59pm</p>
                 <p style="text-align: left;">~Mrs.Helen</p>
 
             </ul>
 
-            <ul class="tl">
+            <ul class="tl" onmouseover="func(this , 'pink')"
+            onmouseout="func2(this , 'rgb(238, 162, 108)')">
                 <h4>Complete long answers of History Chapter 9</h4>
                 <p>Due Time: 29/6/2021 at 11:59pm</p>
                 <p style="text-align: left;">~Mr.Mohit Jain</p>
             </ul>
-            <button id="btn">See All Tasks</button>
+            <button id="btn"  onmouseover="func(this , 'skyblue')"
+            onmouseout="func2(this , 'rgb(206, 81, 106)')">See All Tasks</button>
 
         </li>
+        </div>
         
     </div>
     
@@ -241,9 +253,12 @@
     
     
     <div id="mycourse">
-        <li id="course_list">
-            <h2 style="color: midnightblue; text-align: left; margin-bottom: 15px;">
-                My Courses</h2>
+        <h2 style="color: midnightblue; text-align: left; margin-bottom: 15px;">
+            My Courses</h2>
+        <div id="course_list">
+            
+        <li >
+            
             <ul class="course" onmouseover="func(this , 'rgb(255, 255, 87)')"
             onmouseout="func2(this , 'rgb(235, 235, 235)')">
                 <h3>Calligraphy</h3>
@@ -264,6 +279,7 @@
                 <progress value = "52" max = "100"></progress>  
             </ul>
         </li>
+        </div>
     </div>
     
     </div>
