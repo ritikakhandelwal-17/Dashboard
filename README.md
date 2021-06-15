@@ -1,6 +1,5 @@
-# ritikakhandelwal-17.github.io
-The Webpage can be viewed at https://ritikakhandelwal-17.github.io/
-
+# Dashboard
+The Webpage can be viewed at https://ritikakhandelwal-17.github.io/Dashboard/
 It is a Dashbord showing progess and study analysis of a student
 
 The data is hardcoded as of now for further usage data from APIs can be used.
